@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SECURE TERMINAL</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="terminal-body">
+    
+    <div class="terminal-container">
+        <div class="terminal-header">WARNING: UNAUTHORIZED ACCESS DETECTED</div>
+        <div class="terminal-content" id="terminal-screen">
+            <p>> CONNECTION ESTABLISHED...</p>
+            <p>> INITIATING SERVER PURGE IN 59:59...</p>
+            <p>> MANUAL OVERRIDE REQUIRED.</p>
+            <br>
+            <p>PLEASE ENTER CTO OVERRIDE P.I.N. (TIMECODE FORMAT):</p>
+            <input type="text" id="pinInput" placeholder="####" maxlength="4" autocomplete="off">
+            <button onclick="checkPIN()">SUBMIT</button>
+            <p id="errorMessage" class="error"></p>
+        </div>
+    </div>
+
+    <script src="logic.js"></script>
+</body>
+</html>
